@@ -1,0 +1,76 @@
+{
+  "color": {
+    "bg": "#F6F4EF",
+    "surface": "#FFFCF8",
+    "surfaceElevated": "#FFFFFF",
+    "borderSubtle": "#E5DED2",
+    "borderStrong": "#CFC4B2",
+    "textPrimary": "#171717",
+    "textSecondary": "#5F5A52",
+    "textTertiary": "#8C857A",
+    "accentPrimary": "#16263F",
+    "accentPrimaryHover": "#1D3252",
+    "accentSecondary": "#2A6F6B",
+    "accentSecondarySoft": "#DDF1EE",
+    "info": "#4069D8",
+    "success": "#257A52",
+    "warning": "#A36A16",
+    "danger": "#A33B3B",
+    "dangerSoft": "#FBEAEA",
+    "citationHighlight": "#EEF3FF",
+    "graphNodeSoft": "#E8F0EE",
+    "darkBg": "#0F1217",
+    "darkSurface": "#141922",
+    "darkSurfaceElevated": "#1A2130",
+    "darkBorder": "#2A3446",
+    "darkTextPrimary": "#F4F6FA",
+    "darkTextSecondary": "#ADB7C8",
+    "darkAccent": "#90AFFF"
+  },
+  "radius": {
+    "sm": 8,
+    "md": 12,
+    "lg": 16,
+    "xl": 20,
+    "pill": 999
+  },
+  "spacing": {
+    "1": 4,
+    "2": 8,
+    "3": 12,
+    "4": 16,
+    "5": 20,
+    "6": 24,
+    "8": 32,
+    "10": 40,
+    "12": 48,
+    "16": 64
+  },
+  "typography": {
+    "fontSans": "Inter, ui-sans-serif, system-ui, sans-serif",
+    "fontSerif": "\"IBM Plex Serif\", \"Source Serif 4\", ui-serif, Georgia, serif",
+    "display": { "size": 40, "lineHeight": 48, "weight": 600 },
+    "h1": { "size": 32, "lineHeight": 40, "weight": 600 },
+    "h2": { "size": 24, "lineHeight": 32, "weight": 600 },
+    "h3": { "size": 20, "lineHeight": 28, "weight": 600 },
+    "bodyLg": { "size": 16, "lineHeight": 28, "weight": 400 },
+    "body": { "size": 15, "lineHeight": 24, "weight": 400 },
+    "bodySm": { "size": 14, "lineHeight": 20, "weight": 400 },
+    "meta": { "size": 12, "lineHeight": 16, "weight": 500 },
+    "mono": { "size": 12, "lineHeight": 18, "weight": 500 }
+  },
+  "motion": {
+    "hoverMs": 120,
+    "standardMs": 180,
+    "panelMs": 220,
+    "streamingOffsetY": 4
+  },
+  "layout": {
+    "maxWidth": 1440,
+    "desktopPadding": 24,
+    "tabletPadding": 16,
+    "panelGap": 16,
+    "consultationLeftWidth": 280,
+    "consultationRightWidth": 360
+  }
+}
