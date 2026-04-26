@@ -317,9 +317,7 @@ npm run lint    # 代码检查
 
 前端通过 Next.js rewrites 将 `/api/*` 代理到后端 `localhost:8000`，开发时无需额外配置。
 
-## 🚢 部署说明
-
-> ⚠️ 本项目为毕业设计 + 研究生复试展示项目，以下为基本部署思路。
+## 🚢 以下为基本部署思路。
 
 ### 本地部署
 
@@ -373,5 +371,5 @@ cd frontend && npm start
 ---
 
 <p align="center">
-  <sub>Built with ❤️ by <a href="https://github.com/qscoder23">qscoder23</a> — 毕业设计 & 研究生复试展示项目</sub>
+  <sub>Built with ❤️ by <a href="https://github.com/qscoder23">qscoder23</a> </sub>
 </p>
