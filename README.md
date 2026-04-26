@@ -10,9 +10,9 @@
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
 <p align="center">
-  <img src="docs/screenshots/placeholder.png" alt="Lexiora Demo" width="800">
+  <img src="lexiora-workspace.png" alt="Lexiora Workspace" width="800">
   <br>
-  <em>📸 截图占位 — 运行项目后替换此图片</em>
+  <em>Lexiora 工作区界面</em>
 </p>
 
 ---
