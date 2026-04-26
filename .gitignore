@@ -1,0 +1,29 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Frontend dependencies and build outputs
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# IDE / tools
+.claude/settings.local.json
+.omx/
+.playwright-mcp/
+.codex/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Sensitive
+.env
+.env.local

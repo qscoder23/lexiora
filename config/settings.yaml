@@ -1,0 +1,33 @@
+llm:
+  model: "qwen3.5-plus"
+  api_key: ""
+  base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+  temperature: 0.3
+  max_tokens: 2048
+
+embedding:
+  model: "text-embedding-v3"
+  dimension: 1024
+
+neo4j:
+  uri: "bolt://localhost:7687"
+  username: "neo4j"
+  password: "your_password"
+  database: "neo4j"
+
+retrieval:
+  vector_top_k: 5
+  graph_hop: 2
+  fusion_weights:
+    vector: 0.6
+    graph: 0.4
+  final_top_k: 8
+
+agents:
+  domains:
+    - civil_law
+    - criminal_law
+    - labor_law
+    - admin_law
+    - general
+  default_domain: general
