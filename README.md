@@ -31,8 +31,8 @@
 
 | 层级 | 技术 | 说明 |
 |------|------|------|
-| **LLM** | Qwen 3.5 (DashScope) | 阿里云通义千问，兼容 OpenAI SDK |
-| **Embedding** | text-embedding-v3 | DashScope 文本嵌入，1024 维 |
+| **LLM** | DeepSeek V4 | DeepSeek，OpenAI 兼容 API |
+| **Embedding** | text-embedding-v3 (DashScope) | 阿里云文本嵌入，1024 维 |
 | **Agent 框架** | LangGraph | StateGraph 多节点工作流编排 |
 | **向量存储** | FAISS | 本地向量索引，相似度检索 |
 | **图数据库** | Neo4j 5 | 法律法规-案例知识图谱 |
@@ -109,7 +109,8 @@ lexiora/
 - Node.js 20+
 - [uv](https://docs.astral.sh/uv/) 包管理器
 - Neo4j 5 (Docker 或本地安装)
-- DashScope API Key ([获取地址](https://dashscope.console.aliyun.com/))
+- DeepSeek API Key ([获取地址](https://platform.deepseek.com/))
+- DashScope API Key ([获取地址](https://dashscope.console.aliyun.com/))（仅 Embedding）
 
 ### 1. 克隆项目
 
@@ -136,6 +137,7 @@ docker run -d --name neo4j \
 ### 4. 配置环境变量
 
 ```bash
+export DEEPSEEK_API_KEY="your_deepseek_api_key"
 export DASHSCOPE_API_KEY="your_dashscope_api_key"
 export NEO4J_PASSWORD="your_password"
 ```
@@ -178,7 +180,8 @@ npm run dev
 
 | 变量名 | 说明 | 必需 |
 |--------|------|:----:|
-| `DASHSCOPE_API_KEY` | 阿里云 DashScope API 密钥 | ✅ |
+| `DEEPSEEK_API_KEY` | DeepSeek API 密钥（LLM 对话） | ✅ |
+| `DASHSCOPE_API_KEY` | 阿里云 DashScope API 密钥（Embedding） | ✅ |
 | `NEO4J_PASSWORD` | Neo4j 数据库密码 | ✅ |
 
 所有配置也可直接在 `config/settings.yaml` 中设置，环境变量优先级更高。
@@ -341,7 +344,7 @@ cd frontend && npm start
 ### 注意事项
 
 - Neo4j 需要持久化数据卷
-- DashScope API Key 通过环境变量注入，不要硬编码
+- API Key 通过环境变量注入，不要硬编码到配置文件中
 - 生产环境建议配置 Nginx 反向代理
 - 前端 SSR 需要 Node.js 运行时环境
 

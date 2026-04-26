@@ -44,7 +44,7 @@ class VectorSearchEngine:
         config = load_config()
         self.embeddings = DashScopeEmbeddings(
             model=config["embedding"]["model"],
-            dashscope_api_key=config["llm"]["api_key"],
+            dashscope_api_key=config["embedding"]["api_key"],
         )
         self.vectorstore = None
 

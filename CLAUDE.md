@@ -10,7 +10,7 @@ Lexiora is a Chinese legal consultation assistant built on Multi-Agent orchestra
 
 - **Language**: Python 3.11+
 - **Package Manager**: uv
-- **LLM**: Qwen (via DashScope SDK / OpenAI-compatible API)
+- **LLM**: DeepSeek V4 (via OpenAI-compatible API)
 - **Embedding**: text-embedding-v3 (DashScope)
 - **Agent Framework**: LangGraph (StateGraph for multi-agent orchestration)
 - **Graph DB**: Neo4j Community Edition (Docker)
@@ -39,7 +39,8 @@ uv run python scripts/import_sample_data.py
 
 ## Required Environment Variables
 
-- `DASHSCOPE_API_KEY` — Qwen API key (overrides config file)
+- `DEEPSEEK_API_KEY` — DeepSeek API key (overrides config file)
+- `DASHSCOPE_API_KEY` — DashScope API key for embeddings (overrides config file)
 - `NEO4J_PASSWORD` — Neo4j password (overrides config file)
 
 ## Architecture
